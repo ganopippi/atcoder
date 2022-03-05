@@ -1,0 +1,10 @@
+set CONTEST_TYPE=ABC
+set CONTEST_NO=242
+
+type nul > %CONTEST_TYPE%%CONTEST_NO%_A.py
+type nul > %CONTEST_TYPE%%CONTEST_NO%_B.py
+type nul > %CONTEST_TYPE%%CONTEST_NO%_C.py
+type nul > %CONTEST_TYPE%%CONTEST_NO%_D.py
+type nul > %CONTEST_TYPE%%CONTEST_NO%_E.py
+type nul > %CONTEST_TYPE%%CONTEST_NO%_F.py
+type nul > %CONTEST_TYPE%%CONTEST_NO%_G.py

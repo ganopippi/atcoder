@@ -7,9 +7,11 @@
       - [複数の変数](#複数の変数)
       - [リストに整数を格納する](#リストに整数を格納する)
     - [複数行・一列](#複数行一列)
+    - [複数行・複数列](#複数行複数列)
     - [1文字ずつlist](#1文字ずつlist)
   - [配列](#配列)
     - [配列の1次元へのコピー](#配列の1次元へのコピー)
+    - [縦横入れ替え](#縦横入れ替え)
   - [ライブラリ](#ライブラリ)
     - [itertools](#itertools)
       - [全通りの組み合わせ](#全通りの組み合わせ)
@@ -35,6 +37,13 @@ x = list(map(int, input().split()))
 ```
 ### 複数行・一列
 ```python
+# 文字列
+x = [input() for i in range(5)]
+# 数値
+x = [int(input()) for i in range(rows)]
+```
+### 複数行・複数列
+```python
 x = [list(map(int, input().split())) for i in range(n)]
 ```
 ### 1文字ずつlist
@@ -47,6 +56,10 @@ s = list(input())
 a = [[0,1],[2,3]] # どちらにしろ [0,1,2,3]と1次元になる
 b = a.ravel() # 参照を返す
 c = a.flatten() # copyを返す
+```
+### 縦横入れ替え
+```python
+res = [list(x) for x in zip(*list_name)]
 ```
 ## ライブラリ
 ### itertools
