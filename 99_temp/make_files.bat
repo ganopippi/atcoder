@@ -1,5 +1,5 @@
 set CONTEST_TYPE=ABC
-set CONTEST_NO=242
+set CONTEST_NO=245
 
 type nul > %CONTEST_TYPE%%CONTEST_NO%_A.py
 type nul > %CONTEST_TYPE%%CONTEST_NO%_B.py
